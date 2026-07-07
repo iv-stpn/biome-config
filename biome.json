@@ -7,7 +7,7 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["**", "!!**/data", "!!**/dist"]
+    "includes": ["**", "!!**/dist"]
   },
   "formatter": {
     "enabled": true,
@@ -18,45 +18,19 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "preset": "none",
-      "complexity": {
-        "noBannedTypes": "error",
-        "noUselessThisAlias": "error",
-        "noUselessTypeConstraint": "error"
-      },
+      "preset": "all",
       "correctness": {
-        "noChildrenProp": "error",
-        "noUnusedVariables": "error",
-        "useExhaustiveDependencies": "warn",
-        "useHookAtTopLevel": "error",
-        "useJsxKeyInIterable": "error"
-      },
-      "security": {
-        "noBlankTarget": "error",
-        "noDangerouslySetInnerHtmlWithChildren": "error"
+        "noNodejsModules": "off"
       },
       "style": {
-        "noCommonJs": "error",
-        "noNamespace": "error",
-        "useArrayLiterals": "error",
-        "useAsConstAssertion": "error"
+        "useBlockStatements": "off",
+        "useDestructuring": "off"
       },
       "suspicious": {
-        "noCommentText": "error",
-        "noDuplicateEnumValues": "error",
-        "noDuplicateJsxProps": "error",
-        "noExplicitAny": "error",
-        "noExtraNonNullAssertion": "error",
-        "noMisleadingInstantiator": "error",
-        "noNonNullAssertedOptionalChain": "error",
-        "noTsIgnore": "error",
-        "noUnknownAttribute": "error",
-        "noUnsafeDeclarationMerging": "error",
-        "noUnusedExpressions": "off",
-        "useNamespaceKeyword": "error"
+        "noConsole": "off"
       }
     },
-    "includes": ["**", "!data/**", "!dist/**", "!node_modules/**"]
+    "includes": ["**", "!dist/**", "!node_modules/**"]
   },
   "javascript": {
     "formatter": {
