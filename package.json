@@ -4,6 +4,14 @@
   "description": "Personal reusable Biome configuration for iv-stpn",
   "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iv-stpn/biome-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iv-stpn/biome-config/issues"
+  },
+  "homepage": "https://github.com/iv-stpn/biome-config#readme",
   "files": [
     "biome.json",
     "README.md"
@@ -12,10 +20,19 @@
     "./biome": "./biome.json"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "changeset publish"
   },
   "peerDependencies": {
     "@biomejs/biome": ">=2.5.2",
     "biome-one-liner-plugin": "*"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0"
   }
 }
