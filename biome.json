@@ -39,7 +39,13 @@
         "useBlockStatements": "off",
         "useDestructuring": "off",
         "noDefaultExport": "off",
-        "noTernary": "off"
+        "noTernary": "off",
+        "useConsistentTypeDefinitions": {
+          "level": "on",
+          "options": {
+            "style": "type"
+          }
+        }
       },
       "suspicious": {
         "noConsole": "off"
