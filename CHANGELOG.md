@@ -1,5 +1,11 @@
 # @iv-stpn/biome-config
 
+## 1.2.8
+
+### Patch Changes
+
+- bbf5ae3: Update Biome rules: enable the `project` domain (`recommended`), enable nursery rules (`useSortedClasses`, `noDrizzleDeleteWithoutWhere`, `noDrizzleUpdateWithoutWhere`, `noMisleadingReturnType`, `noUnusedClasses`, `noUselessTypeConversion`, `useIncludes`), enable `correctness/noUndeclaredDependencies` and `correctness/useJsonImportAttributes`, enable `suspicious/noDeprecatedImports`, and remove the `noUnresolvedImports`/`useImportExtensions` overrides. Widen the `@biomejs/biome` peer dependency to `>=2.5.2`.
+
 ## 1.2.7
 
 ### Patch Changes
