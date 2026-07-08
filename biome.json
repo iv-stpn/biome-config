@@ -33,6 +33,11 @@
       "preset": "all",
       "correctness": {
         "noNodejsModules": "off",
+        "noUndeclaredVariables": {
+          "level": "error",
+          "options": { "checkTypes": false }
+        },
+        "noUnresolvedImports": "off",
         "useImportExtensions": "off"
       },
       "style": {
@@ -54,6 +59,7 @@
     "includes": ["**", "!dist", "!node_modules"]
   },
   "javascript": {
+    "globals": ["Bun"],
     "formatter": {
       "quoteStyle": "single",
       "trailingCommas": "all"
