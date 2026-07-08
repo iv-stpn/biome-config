@@ -1,5 +1,11 @@
 # @iv-stpn/biome-config
 
+## 1.2.1
+
+### Patch Changes
+
+- 02eee54: Fix `files.includes` glob: replace the invalid `!!**/dist` double-negation with `!dist`, and normalize the linter `includes` ignores to `!dist`/`!node_modules`.
+
 ## 1.2.0
 
 ### Minor Changes
