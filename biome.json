@@ -59,7 +59,7 @@
     "includes": ["**", "!dist", "!node_modules"]
   },
   "javascript": {
-    "globals": ["Bun"],
+    "globals": ["Bun", "__DEV__"],
     "formatter": {
       "quoteStyle": "single",
       "trailingCommas": "all"
