@@ -1,5 +1,11 @@
 # @iv-stpn/biome-config
 
+## 1.2.9
+
+### Patch Changes
+
+- e03fa1e: Enable `useNamingConvention` in the style group with `strictCase: false`, and disable `noMagicNumbers`.
+
 ## 1.2.8
 
 ### Patch Changes
