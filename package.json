@@ -33,7 +33,7 @@
     "prepare": "husky"
   },
   "peerDependencies": {
-    "@biomejs/biome": "2.5.2",
+    "@biomejs/biome": ">=2.5.2",
     "biome-one-liner-plugin": "*",
     "biome-typescript-best-practices-plugin": "*",
     "biome-react-best-practices-plugin": "*",

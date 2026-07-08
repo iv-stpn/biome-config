@@ -26,19 +26,29 @@
       "svelte": "none",
       "solid": "none",
       "turborepo": "none",
-      "vue": "none"
+      "vue": "none",
+      "project": "recommended"
     },
     "enabled": true,
     "rules": {
       "preset": "all",
+      "nursery": {
+        "useSortedClasses": "on",
+        "noDrizzleDeleteWithoutWhere": "on",
+        "noDrizzleUpdateWithoutWhere": "on",
+        "noMisleadingReturnType": "on",
+        "noUnusedClasses": "on",
+        "noUselessTypeConversion": "on",
+        "useIncludes": "on"
+      },
       "correctness": {
+        "noUndeclaredDependencies": "on",
+        "useJsonImportAttributes": "on",
         "noNodejsModules": "off",
         "noUndeclaredVariables": {
           "level": "error",
           "options": { "checkTypes": false }
-        },
-        "noUnresolvedImports": "off",
-        "useImportExtensions": "off"
+        }
       },
       "style": {
         "useBlockStatements": "off",
@@ -53,6 +63,7 @@
         }
       },
       "suspicious": {
+        "noDeprecatedImports": "on",
         "noConsole": "off"
       }
     },
