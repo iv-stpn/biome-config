@@ -25,11 +25,14 @@
     "rules": {
       "preset": "all",
       "correctness": {
-        "noNodejsModules": "off"
+        "noNodejsModules": "off",
+        "useImportExtensions": "off"
       },
       "style": {
         "useBlockStatements": "off",
-        "useDestructuring": "off"
+        "useDestructuring": "off",
+        "noDefaultExport": "off",
+        "noTernary": "off"
       },
       "suspicious": {
         "noConsole": "off"
