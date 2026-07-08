@@ -1,5 +1,11 @@
 # @iv-stpn/biome-config
 
+## 1.2.3
+
+### Patch Changes
+
+- ac9bd75: Disable framework-specific linter domains (`qwik`, `svelte`, `solid`, `turborepo`, `vue`) by setting them to `none`.
+
 ## 1.2.2
 
 ### Patch Changes
