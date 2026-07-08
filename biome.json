@@ -54,7 +54,14 @@
         "useBlockStatements": "off",
         "useDestructuring": "off",
         "noDefaultExport": "off",
+        "noMagicNumbers": "off",
         "noTernary": "off",
+        "useNamingConvention": {
+          "level": "on",
+          "options": {
+            "strictCase": false
+          }
+        },
         "useConsistentTypeDefinitions": {
           "level": "on",
           "options": {
