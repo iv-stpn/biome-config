@@ -41,6 +41,12 @@
         "noUselessTypeConversion": "on",
         "useIncludes": "on"
       },
+      "complexity": {
+        "noExcessiveLinesPerFunction": {
+          "level": "on",
+          "options": { "maxLines": 90 }
+        }
+      },
       "correctness": {
         "noPrivateImports": "on",
         "noUndeclaredDependencies": "on",
@@ -52,12 +58,21 @@
           "options": { "checkTypes": false }
         }
       },
+      "security": {
+        "noSecrets": {
+          "level": "on",
+          "options": {
+            "entropyThreshold": 100
+          }
+        }
+      },
       "style": {
         "useBlockStatements": "off",
         "useDestructuring": "off",
         "noDefaultExport": "off",
         "noMagicNumbers": "off",
         "noTernary": "off",
+        "noHexColors": "off",
         "useNamingConvention": {
           "level": "on",
           "options": {
