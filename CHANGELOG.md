@@ -1,5 +1,11 @@
 # @iv-stpn/biome-config
 
+## 1.2.7
+
+### Patch Changes
+
+- bc403ec: Add `__DEV__` to the list of globals.
+
 ## 1.2.6
 
 ### Patch Changes
