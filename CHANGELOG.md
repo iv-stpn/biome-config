@@ -1,5 +1,11 @@
 # @iv-stpn/biome-config
 
+## 1.2.2
+
+### Patch Changes
+
+- 28750fc: Disable additional lint rules: turn off `correctness/useImportExtensions`, and `style/noDefaultExport` and `style/noTernary`.
+
 ## 1.2.1
 
 ### Patch Changes
