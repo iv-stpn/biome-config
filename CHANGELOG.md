@@ -1,5 +1,11 @@
 # @iv-stpn/biome-config
 
+## 1.2.6
+
+### Patch Changes
+
+- 84587e8: Enable `noUndeclaredVariables` (with `checkTypes: false`), disable `noUnresolvedImports`, and add `Bun` to the list of globals.
+
 ## 1.2.5
 
 ### Patch Changes
