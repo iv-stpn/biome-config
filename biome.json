@@ -27,7 +27,7 @@
       "solid": "none",
       "turborepo": "none",
       "vue": "none",
-      "project": "recommended"
+      "project": "none"
     },
     "enabled": true,
     "rules": {
@@ -42,8 +42,10 @@
         "useIncludes": "on"
       },
       "correctness": {
+        "noPrivateImports": "on",
         "noUndeclaredDependencies": "on",
         "useJsonImportAttributes": "on",
+        "useImportExtensions": "off",
         "noNodejsModules": "off",
         "noUndeclaredVariables": {
           "level": "error",
