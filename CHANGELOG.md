@@ -1,5 +1,11 @@
 # @iv-stpn/biome-config
 
+## 1.2.11
+
+### Patch Changes
+
+- eca5170: Enable `complexity/noExcessiveLinesPerFunction` (`maxLines: 90`) and `security/noSecrets` (`entropyThreshold: 100`), and disable `style/noHexColors`.
+
 ## 1.2.10
 
 ### Patch Changes
