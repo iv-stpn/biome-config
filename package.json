@@ -1,6 +1,6 @@
 {
   "name": "@iv-stpn/biome-config",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Personal reusable Biome configuration for iv-stpn",
   "license": "MIT",
   "type": "module",

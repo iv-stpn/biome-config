@@ -1,5 +1,11 @@
 # @iv-stpn/biome-config
 
+## 1.2.0
+
+### Minor Changes
+
+- d68efa5: Add three new Biome plugins: `biome-typescript-best-practices-plugin`, `biome-react-best-practices-plugin`, and `biome-drizzle-best-practices-plugin`, registered as peer dependencies.
+
 ## 1.1.0
 
 ### Minor Changes
