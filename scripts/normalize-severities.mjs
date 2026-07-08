@@ -47,31 +47,32 @@ function defaultSeverity(rule) {
 
 const removed = [];
 const collapsed = [];
+/** @type {Record<string, unknown>} */
+const newGroups = {};
 for (const [group, rules] of Object.entries(groups)) {
-  if (!NON_GROUPS.has(group) && typeof rules === 'object' && rules !== null) {
+  if (NON_GROUPS.has(group) || typeof rules !== 'object' || rules === null) newGroups[group] = rules;
+  else {
+    /** @type {Record<string, unknown>} */
+    const newRules = {};
     for (const [rule, current] of Object.entries(rules)) {
-      // Only handle plain severity strings; leave objects (rule options) alone.
-      if (typeof current === 'string') {
-        const def = defaultSeverity(rule);
-        // Skip intentional overrides; only normalize defaults and explicit "on".
-        if (current === def || current === 'on') {
-          if (preset === 'none') {
-            if (current !== 'on') {
-              rules[rule] = 'on';
-              collapsed.push({ group, rule, from: current, default: def });
-            }
-          } else {
-            // Preset enables the rule at its default already — drop the redundant entry.
-            delete rules[rule];
-            removed.push({ group, rule, from: current, default: def });
-          }
-        }
+      const def = typeof current === 'string' ? defaultSeverity(rule) : null;
+      if (typeof current !== 'string' || (current !== def && current !== 'on')) {
+        // Non-string entries (rule options) and intentional overrides are kept as-is.
+        newRules[rule] = current;
+      } else if (preset === 'none') {
+        // Removing at "none" would disable the rule; collapse to enable-at-default.
+        newRules[rule] = 'on';
+        if (current !== 'on') collapsed.push({ group, rule, from: current, default: def });
+      } else {
+        // Preset enables the rule at its default already — drop the redundant entry.
+        removed.push({ group, rule, from: current, default: def });
       }
     }
     // Drop groups that became empty after pruning.
-    if (Object.keys(rules).length === 0) delete groups[group];
+    if (Object.keys(newRules).length > 0) newGroups[group] = newRules;
   }
 }
+if (config.linter?.rules) config.linter.rules = newGroups;
 
 writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
 
