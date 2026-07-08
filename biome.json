@@ -26,7 +26,7 @@
       "svelte": "none",
       "solid": "none",
       "turborepo": "none",
-      "vue": "none",
+      "vue": "none"
     },
     "enabled": true,
     "rules": {

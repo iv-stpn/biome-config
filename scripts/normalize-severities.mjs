@@ -32,7 +32,9 @@ const NON_GROUPS = new Set(['recommended', 'preset']);
 
 const DEFAULT_SEVERITY_RE = /^-\s*Default severity:\s*(\w+)/m;
 
+/** @type {Map<string, string>} */
 const severityCache = new Map();
+/** @param {string} rule */
 function defaultSeverity(rule) {
   if (severityCache.has(rule)) return severityCache.get(rule);
   const out = execFileSync(biomeBin, ['explain', rule], { encoding: 'utf8' });
