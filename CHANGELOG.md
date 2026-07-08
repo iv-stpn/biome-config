@@ -1,5 +1,11 @@
 # @iv-stpn/biome-config
 
+## 1.2.10
+
+### Patch Changes
+
+- acc1c99: Disable the `project` domain, enable `noPrivateImports`, and disable `useImportExtensions` in the correctness group.
+
 ## 1.2.9
 
 ### Patch Changes
