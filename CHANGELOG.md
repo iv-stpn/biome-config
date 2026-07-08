@@ -1,5 +1,11 @@
 # @iv-stpn/biome-config
 
+## 1.2.5
+
+### Patch Changes
+
+- 2f08fc5: Enable `useConsistentTypeDefinitions` with the `type` style, enforcing `type` over `interface` for type definitions.
+
 ## 1.2.4
 
 ### Patch Changes
