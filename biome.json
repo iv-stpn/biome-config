@@ -21,6 +21,13 @@
     "lineWidth": 130
   },
   "linter": {
+    "domains": {
+      "qwik": "none",
+      "svelte": "none",
+      "solid": "none",
+      "turborepo": "none",
+      "vue": "none",
+    },
     "enabled": true,
     "rules": {
       "preset": "all",
