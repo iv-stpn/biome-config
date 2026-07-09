@@ -74,6 +74,7 @@
         "noTernary": "off",
         "noHexColors": "off",
         "useNamingConvention": "off",
+        "useExplicitLengthCheck": "off",
         "useConsistentTypeDefinitions": {
           "level": "on",
           "options": {
