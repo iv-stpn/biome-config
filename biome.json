@@ -73,12 +73,7 @@
         "noMagicNumbers": "off",
         "noTernary": "off",
         "noHexColors": "off",
-        "useNamingConvention": {
-          "level": "on",
-          "options": {
-            "strictCase": false
-          }
-        },
+        "useNamingConvention": "off",
         "useConsistentTypeDefinitions": {
           "level": "on",
           "options": {
