@@ -1,5 +1,11 @@
 # @iv-stpn/biome-config
 
+## 1.2.13
+
+### Patch Changes
+
+- 6036f5e: Disable `style/useExplicitLengthCheck` (too many false positives).
+
 ## 1.2.12
 
 ### Patch Changes
