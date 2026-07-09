@@ -1,5 +1,11 @@
 # @iv-stpn/biome-config
 
+## 1.2.12
+
+### Patch Changes
+
+- 265a629: Disable `style/useNamingConvention` (too many false positives).
+
 ## 1.2.11
 
 ### Patch Changes
