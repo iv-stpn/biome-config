@@ -12,7 +12,6 @@
       },
       "peerDependencies": {
         "@biomejs/biome": ">=2.5.4",
-        "biome-drizzle-best-practices-plugin": "*",
         "biome-one-liner-plugin": "*",
         "biome-react-best-practices-plugin": "*",
         "biome-typescript-best-practices-plugin": "*",
@@ -137,8 +136,6 @@
     "array-union": ["array-union@2.1.0", "", {}, "sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw=="],
 
     "better-path-resolve": ["better-path-resolve@1.0.0", "", { "dependencies": { "is-windows": "^1.0.0" } }, "sha512-pbnl5XzGBdrFU/wT4jqmJVPn2B6UHPBOhzMQkY/SPUPB6QtUXtmBHBIwCbXJol93mOpGMnQyP/+BB19q04xj7g=="],
-
-    "biome-drizzle-best-practices-plugin": ["biome-drizzle-best-practices-plugin@1.0.0", "", {}, "sha512-Q4Gqf75d9+mbnuoB17FdcEarSG+9W0wiOcDpnwc7u5BRdrrhCqx86yTABbatJavRtfYIq06UIce/XWNBpohTng=="],
 
     "biome-one-liner-plugin": ["biome-one-liner-plugin@1.3.0", "", {}, "sha512-y1UVQnKVgzgQZ4N/5pLWaEog9bb5rjCzrJd8hBt3R3PHQdFy34rHDKDbrNpW5IOzTlvt7G9JPc5Vezt/RNTsiQ=="],
 
