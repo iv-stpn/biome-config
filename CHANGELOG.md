@@ -1,5 +1,11 @@
 # @iv-stpn/biome-config
 
+## 1.3.0
+
+### Minor Changes
+
+- e1082fc: Remove biome-drizzle-best-practices-plugin, bump @biomejs/biome peer to >=2.5.4, add noExcessiveCognitiveComplexity rule, and increase noExcessiveLinesPerFunction maxLines to 100.
+
 ## 1.2.13
 
 ### Patch Changes
