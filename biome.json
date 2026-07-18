@@ -1,10 +1,9 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.5.2/schema.json",
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "plugins": [
     "./node_modules/biome-one-liner-plugin/oneLiner.grit",
     "./node_modules/biome-typescript-best-practices-plugin/typescript.grit",
-    "./node_modules/biome-react-best-practices-plugin/react.grit",
-    "./node_modules/biome-drizzle-best-practices-plugin/drizzle.grit"
+    "./node_modules/biome-react-best-practices-plugin/react.grit"
   ],
   "vcs": {
     "enabled": true,
@@ -44,7 +43,15 @@
       "complexity": {
         "noExcessiveLinesPerFunction": {
           "level": "on",
-          "options": { "maxLines": 90 }
+          "options": {
+            "maxLines": 100
+          }
+        },
+        "noExcessiveCognitiveComplexity": {
+          "level": "on",
+          "options": {
+            "maxAllowedComplexity": 25
+          }
         }
       },
       "correctness": {
@@ -55,7 +62,9 @@
         "noNodejsModules": "off",
         "noUndeclaredVariables": {
           "level": "error",
-          "options": { "checkTypes": false }
+          "options": {
+            "checkTypes": false
+          }
         }
       },
       "security": {

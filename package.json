@@ -33,16 +33,15 @@
     "prepare": "husky"
   },
   "peerDependencies": {
-    "@biomejs/biome": ">=2.5.2",
+    "@biomejs/biome": ">=2.5.4",
     "biome-one-liner-plugin": "*",
     "biome-typescript-best-practices-plugin": "*",
-    "biome-react-best-practices-plugin": "*",
-    "biome-drizzle-best-practices-plugin": "*"
+    "biome-react-best-practices-plugin": "*"
   },
   "devDependencies": {
     "@changesets/cli": "2.31.0",
     "@types/node": "^26",
     "husky": "9.1.7",
-    "typescript": "^6"
+    "typescript": "^7"
   }
 }
